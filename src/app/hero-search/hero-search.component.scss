@@ -1,31 +1,49 @@
 /* HeroSearch private styles */
+#search-component {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: rgb(247, 242, 233);
+  border-radius: 10px;
+  margin: 10px 0 10px 0;
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 70%;
+    align-self: center;
+  }
+}
 
 label {
-    display: block;
+    display: flex;
     font-weight: bold;
     font-size: 1.2rem;
     margin-top: 1rem;
     margin-bottom: .5rem;
-  
+    justify-content: center;
   }
   input {
     padding: .5rem;
     width: 100%;
     max-width: 600px;
     box-sizing: border-box;
-    display: block;
+    border-radius: 10px;
+    border-style: solid;
     &:focus {
         outline: #336699 auto 1px;
     }
 }
   li {
     list-style-type: none;
+    display: flex;
+    justify-content: center;
   }
   .search-result li a {
     border-bottom: 1px solid gray;
     border-left: 1px solid gray;
     border-right: 1px solid gray;
-    display: inline-block;
+    display: flex;
     width: 100%;
     max-width: 600px;
     padding: .5rem;
@@ -39,6 +57,11 @@ label {
   }
   
   ul.search-result {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    height: 10%;
+    width: 70%;
     margin-top: 0;
     padding-left: 0;
   }
