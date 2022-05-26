@@ -1,13 +1,28 @@
 /* DashboardComponent's private CSS styles */
+app-hero-search {
+  display:flex;
+  width: 100%;
+}
+.dashboard {
+  height: auto;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  background-color:wheat;
+  border-radius: 5px;
+  margin: 0 auto;
+  margin-top: 10px;
+}
 
 h2 {
     text-align: center;
   }
   
   .heroes-menu {
+    width: 100%;
     padding: 0;
-    margin: auto;
     max-width: 1000px;
+    margin-bottom: 10px;
   
     /* flexbox */
     display: flex;
@@ -45,6 +60,13 @@ h2 {
   @media (min-width: 600px) {
     a {
       width: 18%;
+      box-sizing: content-box;
+    }
+  }
+
+  @media (max-width: 600px) {
+    a {
+      width: 80%;
       box-sizing: content-box;
     }
   }
